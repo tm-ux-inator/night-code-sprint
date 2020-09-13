@@ -1,28 +1,20 @@
 import React from "react"
+import "./Navbar.css"
 
 class Navbar extends React.Component{
-    constructor(){
-        super(props)
-    }
+ 
     render(){
         return(
-            <nav role="navigation">
-                <div className="brand-logo">
-                    <a href="#">HaalChaal</a>
-
-                </div>
-                <div className="menu">
-                    <span></span>
-                </div>
-                <ul className="nav-list">
-                    <li className="nav-item">{this.props.list[0]}</li>
-                    <li className="nav-item">{this.props.list[1]}</li>
-                    <li className="nav-item">{this.props.list[2]}</li>
-
+            <navbar class="active">
+                <h1>
+                    HaalChaal
+                </h1>
+                <ul>
+                    <li>Home</li>
+                   <li>About</li> 
+                    <li>Contact</li>
                 </ul>
-
-
-            </nav>
+            </navbar> 
         )
     }
 
